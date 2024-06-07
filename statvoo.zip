@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statvoo</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1126602015214222" crossorigin="anonymous"></script>
+  <style>
+     html {
+            font-size: 14px;
+        }
+
+        h1 {
+            margin: 4rem 0;
+            color: #0AB30A;
+            font-size: 3rem;
+            font-weight: normal;
+            letter-spacing: 0.2rem;
+        }
+
+        input[type="search"] {
+            max-width: 600px;
+            margin: 3rem auto;
+        }
+
+        p {
+            margin-top: 4rem;
+        }
+
+        ul {
+            margin-bottom: 2rem;
+        }
+  </style>
+</head>
+<body>
+<div class="container text-center">
+    <h1><img src="/assets/favicon-32x32.png" alt="logo" style="width:32px;position: relative;height:32px;top: -5px;" /> Statvoo</h1>
+    <form method="post" action="/?process">
+        <div class="form-group">
+            <input type="search" class="form-control" name="domain" placeholder="Enter a site here...">
+        </div>
+        <button type="submit" class="btn btn-success">Get Free Report</button>
+    </form>
+    <p class="font-italic">Recently updated:</p>
+    <ul class="list-unstyled">
+    
+                    <li>
+                <a href="https://pobox.com.statvoo.com">pobox.com</a>
+            </li>
+                    <li>
+                <a href="https://cabrillo.edu.statvoo.com">cabrillo.edu</a>
+            </li>
+                    <li>
+                <a href="https://internous.co.jp.statvoo.com">internous.co.jp</a>
+            </li>
+                    <li>
+                <a href="http://beeg.tech.statvoo.com">beeg.tech</a>
+            </li>
+                    <li>
+                <a href="https://hattingen.de.statvoo.com">hattingen.de</a>
+            </li>
+                    <li>
+                <a href="https://aulaformativa.com.statvoo.com">aulaformativa.com</a>
+            </li>
+                    <li>
+                <a href="https://dashnex.com.statvoo.com">dashnex.com</a>
+            </li>
+                    <li>
+                <a href="https://everyayah.com.statvoo.com">everyayah.com</a>
+            </li>
+                    <li>
+                <a href="https://vishalsekar.com.statvoo.com">vishalsekar.com</a>
+            </li>
+                    <li>
+                <a href="https://3dlacrosse.com.statvoo.com">3dlacrosse.com</a>
+            </li>
+                
+    </ul>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEQ8QRQBH7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QEQ8QRQBH7');
+</script>
+</body>
+</html>
