@@ -19,10 +19,11 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-
+        
+    #- name: Update Alexa #下线
+    #  run: wget https://s3.amazonaws.com/alexa-static/top-1m.csv.zip -O alexa.zip
     - name: Update Cisco Umbrella
       run: wget https://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip -O umbrella.zip
-      
     - name: Update Majestic
       run: |
         wget https://downloads.majestic.com/majestic_million.csv -O top-1m.csv
@@ -36,13 +37,13 @@ jobs:
       run: wget https://www.domcop.com/files/top/top10milliondomains.csv.zip -O domcop.zip
     - name: Update Tranco
       run: wget https://tranco-list.eu/top-1m.csv.zip -O tranco.zip
-    - name: Update Cloudflare
-      run: |
-        pip install selenium
-        python download_cloudflare.py
-        mv *.csv top-1m.csv
-        zip cloudflare.zip top-1m.csv
-        rm top-1m.csv
+    #- name: Update Cloudflare #需要浏览器
+    #  run: |
+    #    pip install selenium
+    #    python download_cloudflare.py
+    #    mv *.csv top-1m.csv
+    #    zip cloudflare.zip top-1m.csv
+    #    rm top-1m.csv
 
     - name: Commit and Push changes
       run: |
