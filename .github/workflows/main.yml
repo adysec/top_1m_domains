@@ -40,7 +40,7 @@ jobs:
       run: |
         pip install selenium
         python download_cloudflare.py
-        mv cloudflare-radar-domains-top-1000000.csv top-1m.csv
+        mv *.csv top-1m.csv
         zip cloudflare.zip top-1m.csv
         rm top-1m.csv
 
