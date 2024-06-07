@@ -1,0 +1,54 @@
+name: Daily Update Top 1m Domains
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Update Cisco Umbrella
+      run: wget https://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip -O umbrella.zip
+      
+    - name: Update Majestic
+      run: |
+        wget https://downloads.majestic.com/majestic_million.csv -O top-1m.csv
+        zip majestic.zip top-1m.csv
+        rm top-1m.csv
+    - name: Update BuiltWith
+      run: wget https://builtwith.com/dl/builtwith-top1m.zip -O builtwith.zip
+    - name: Update Statvoo
+      run: wget https://statvoo.com/dl/top-1million-sites.csv.zip -O statvoo.zip
+    - name: Update DomCop
+      run: wget https://www.domcop.com/files/top/top10milliondomains.csv.zip -O domcop.zip
+    - name: Update Tranco
+      run: wget https://tranco-list.eu/top-1m.csv.zip -O tranco.zip
+    - name: Update Cloudflare
+      run: |
+        pip install selenium
+        python download_cloudflare.py
+        mv cloudflare-radar-domains-top-1000000.csv top-1m.csv
+        zip cloudflare.zip top-1m.csv
+        rm top-1m.csv
+
+    - name: Commit and Push changes
+      run: |
+        echo $(date +'%Y%m%d') > date.txt
+        git add .
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -am "$(date +'%Y%m%d')"
+        git push -v --progress
