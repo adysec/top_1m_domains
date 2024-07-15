@@ -31,8 +31,8 @@ jobs:
         rm top-1m.csv
     #- name: Update BuiltWith #ban ip
     #  run: wget https://builtwith.com/dl/builtwith-top1m.zip -O builtwith.zip
-    - name: Update Statvoo
-      run: wget https://statvoo.com/dl/top-1million-sites.csv.zip -O statvoo.zip
+    #- name: Update Statvoo
+    #  run: wget https://statvoo.com/dl/top-1million-sites.csv.zip -O statvoo.zip
     - name: Update DomCop
       run: wget https://www.domcop.com/files/top/top10milliondomains.csv.zip -O domcop.zip
     - name: Update Tranco
