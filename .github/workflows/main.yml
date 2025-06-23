@@ -48,8 +48,6 @@ jobs:
     - name: Commit and Push changes
       run: |
         echo $(date +'%Y%m%d') > date.txt
-    #    git lfs install
-    #    git lfs track "domcop.zip"
         git add .gitattributes
         git add .
         git config --local user.email "action@github.com"
