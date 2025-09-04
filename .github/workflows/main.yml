@@ -50,7 +50,7 @@ jobs:
         echo $(date +'%Y%m%d') > date.txt
         git add .gitattributes
         git add .
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "admin@adysec.com"
+        git config --local user.name "adysec"
         git commit -am "$(date +'%Y%m%d')"
         git push -v --progress
