@@ -37,6 +37,11 @@ jobs:
       run: wget https://www.domcop.com/files/top/top10milliondomains.csv.zip -O domcop.zip
     - name: Update Tranco
       run: wget https://tranco-list.eu/top-1m.csv.zip -O tranco.zip
+    - name: Update NetAPI
+      run: |
+        wget https://netapi.com/netapi_top1mln.csv -O top-1m.csv
+        zip netapi.zip top-1m.csv
+        rm top-1m.csv
     #- name: Update Cloudflare #需要浏览器
     #  run: |
     #    pip install selenium
