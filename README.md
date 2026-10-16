@@ -69,3 +69,11 @@
 下载链接: https://radar.cloudflare.com/charts/LargerTopDomainsTable/attachment?id=525&top=1000000
 
 文件: cloudflare.zip
+
+### NetAPI
+
+页面: https://netapi.com/top-1-mln-websites/
+
+下载链接: https://netapi.com/netapi_top1mln.csv
+
+文件: netapi.zip
